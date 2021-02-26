@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'lint'
+1 verbose cli ]
+2 info using npm@6.14.10
+3 info using node@v14.15.4
+4 verbose run-script [ 'prelint', 'lint', 'postlint' ]
+5 info lifecycle server@1.0.0~prelint: server@1.0.0
+6 info lifecycle server@1.0.0~lint: server@1.0.0
+7 verbose lifecycle server@1.0.0~lint: unsafe-perm in lifecycle true
+8 verbose lifecycle server@1.0.0~lint: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\alexandra.breharu\Documents\GitHub\vue-try\server\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\alexandra.breharu\Documents\GitHub\vue-try\server\node_modules\.bin;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Ruby30-x64\bin;C:\Users\alexandra.breharu\AppData\Local\Microsoft\WindowsApps;C:\xampp\php;C:\Users\alexandra.breharu\AppData\Roaming\Composer\vendor\bin;C:\Users\alexandra.breharu\AppData\Roaming\npm;C:\Users\alexandra.breharu\AppData\Local\GitHubDesktop\bin;C:\Users\alexandra.breharu\composer;C:\Users\alexandra.breharu\AppData\Local\Programs\Microsoft VS Code\bin;";C:\User\alexandra.breharu\AppData\Roaming\nodejs\"
+9 verbose lifecycle server@1.0.0~lint: CWD: C:\Users\alexandra.breharu\Documents\GitHub\vue-try\server
+10 silly lifecycle server@1.0.0~lint: Args: [ '/d /s /c', 'eslint **/*.js' ]
+11 silly lifecycle server@1.0.0~lint: Returned: code: 1  signal: null
+12 info lifecycle server@1.0.0~lint: Failed to exec lint script
+13 verbose stack Error: server@1.0.0 lint: `eslint **/*.js`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:315:20)
+13 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:315:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1048:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+14 verbose pkgid server@1.0.0
+15 verbose cwd C:\Users\alexandra.breharu\Documents\GitHub\vue-try\server
+16 verbose Windows_NT 10.0.19042
+17 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "lint"
+18 verbose node v14.15.4
+19 verbose npm  v6.14.10
+20 error code ELIFECYCLE
+21 error errno 1
+22 error server@1.0.0 lint: `eslint **/*.js`
+22 error Exit status 1
+23 error Failed at the server@1.0.0 lint script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
