@@ -33,12 +33,6 @@ export default {
   },
   methods: {
     async register () {
-      const response = await AuthenticationService.register({
-        email: this.email, 
-        password: this.password
-      })
-      console.log(response.data)
-
       try {
         await AuthenticationService.register({
           email: this.email,
@@ -48,7 +42,7 @@ export default {
         this.error = error.response.data.error
       }
     }
-  },
+  }
 }
 </script>
 
