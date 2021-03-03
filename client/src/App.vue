@@ -3,13 +3,10 @@
   <page-header />
   <main>
     <v-container fluid>
-      <!-- <div id="app"> -->
       <router-view/>
     </v-container>
   </main>
-    <!-- </div> -->
 </v-app>
-
 </template>
 
 <script>
@@ -33,13 +30,8 @@ body{
 }
 
 v-app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
   margin: auto;
   padding-top:70px;
-  /* margin-top: 60px; */
 }
 
 .xs6{
@@ -49,7 +41,6 @@ v-app {
 
 .v-btn{
   min-width: 100px;
-  /* align-self: center; */
   margin-bottom: 10px;
 }
 
