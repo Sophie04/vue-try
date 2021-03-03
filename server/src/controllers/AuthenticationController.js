@@ -1,7 +1,6 @@
 const {User} = require('../models')
 const jwt = require('jsonwebtoken')
 const config = require('../config/config')
-var bcrypt = require('bcrypt-nodejs')
 
 function jwtSignUser (user) {
   const ONE_WEEK = 60 * 60 * 24 *7
@@ -27,24 +26,22 @@ module.exports = {
   },
 
   async login (req, res) {
-    try{
+    try {
       const {email, password} = req.body
       const user = await User.findOne({
         where: {
           email: email
         }
       })
+
       if (!user) {
-        return res.status(403).send({
+        res.status(403).send({
           error: 'The login information was incorrect'
         })
       }
-      
-      const isPasswordValid = user.comparePassword(user.password, password)
-      console.log(user.password)
-      console.log(password)
-      console.log(isPasswordValid)
-      
+
+      const isPasswordValid = password === user.password
+
       if (!isPasswordValid) {
         return res.status(403).send({
           error: 'The login information was incorrect'
@@ -57,10 +54,9 @@ module.exports = {
         token: jwtSignUser(userJson)
       })
     } catch (err) {
-      console.log(err)
-      res.status(500).send({
+      res.status(400).send({
         error: 'An error has occured trying to log in'
       })
     }
-  } 
+  }
 }

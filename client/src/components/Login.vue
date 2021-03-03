@@ -11,7 +11,7 @@
       <div class="d-flex flex-column pl-4 pr-4 pt-2 pb-2">
         <v-text-field label="Email" v-model="email"></v-text-field>
         <br>
-        <v-text-field label="Password" v-model="password"></v-text-field>
+        <v-text-field label="Password" v-model="password" :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'" :type="show ? 'text' : 'password'" counter @click:append="show = !show"></v-text-field>
         <br>
         <div class="error" v-html="error" />
         <v-btn class="indigo lighten-1" @click="login" dark>Login</v-btn>
