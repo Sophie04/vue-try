@@ -1,12 +1,12 @@
 <template>
-  <v-app class="flex" app>
-    <page-header />
-    <main>
-      <v-container fluid>
-        <router-view/>
-      </v-container>
-    </main>
-  </v-app>
+<v-app class="flex" app>
+  <page-header />
+  <main>
+    <v-container fluid>
+      <router-view/>
+    </v-container>
+  </main>
+</v-app>
 </template>
 
 <script>

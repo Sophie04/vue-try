@@ -4,6 +4,7 @@
             <span class="home" @click="navigateTo({name: 'root'})">
                 vueTry
             </span>
+            vueTry
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -27,7 +28,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
